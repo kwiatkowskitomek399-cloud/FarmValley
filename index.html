@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#263d2b">
+  <title>Farma 3D</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js"
+    }
+  }
+  </script>
+  <script type="module" src="./game.js"></script>
+</head>
+<body>
+  <div id="game"></div>
+
+  <header class="topbar">
+    <div>
+      <strong>FARMA 3D</strong>
+      <small id="status">Gospodarstwo</small>
+    </div>
+    <div class="money" id="money">12 500 zł</div>
+  </header>
+
+  <div class="info">
+    <span id="vehicleInfo">POSTAĆ</span>
+    <span id="speed">0 km/h</span>
+    <span id="weather">☀ Dzień</span>
+  </div>
+
+  <div class="crosshair">+</div>
+
+  <div class="help" id="help">
+    Podejdź do traktora i naciśnij WEJDŹ
+  </div>
+
+  <div class="controls">
+    <div id="stickZone" class="stick-zone">
+      <div id="stickBase" class="stick-base">
+        <div id="stickKnob" class="stick-knob"></div>
+      </div>
+    </div>
+
+    <div class="right-controls">
+      <button id="cameraBtn">KAMERA</button>
+      <button id="enterBtn">WEJDŹ</button>
+      <button id="workBtn">PRACA</button>
+      <button id="saveBtn">ZAPISZ</button>
+    </div>
+  </div>
+
+  <div id="message" class="message"></div>
+</body>
+</html>
